@@ -1,0 +1,18 @@
+<h2>Show note</h2>
+
+<ul>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @note.description %>
+  </li>
+
+  <li>
+    <strong>Debit in cents:</strong>
+    <%= @note.debit_in_cents %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: note_path(@conn, :edit, @note) %>
+<%= link "Back", to: note_path(@conn, :index) %>
