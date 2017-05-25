@@ -1,7 +1,7 @@
 defmodule Notesdefrais.PageController do
   use Notesdefrais.Web, :controller
 
-  def index(conn, _params) do
-    render conn, "index.html"
+  def landing(conn, _params) do
+    render conn, "landing.html"
   end
 end
